@@ -176,8 +176,11 @@
         }
       }
 
+      .file-tree-container {
+        border-right: 1px solid var(--border-color);
+      }
+
       .selected-files-panel {
-        border-left: 1px solid var(--border-color);
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -375,7 +378,7 @@
 
         <div class="container-split">
           <!-- Our custom web component for the file tree: -->
-          <tree-view id="fileTree"></tree-view>
+          <tree-view id="fileTree" class="file-tree-container"></tree-view>
 
           <div class="selected-files-panel">
             <div class="selected-files-header">
